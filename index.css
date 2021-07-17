@@ -1,0 +1,56 @@
+body {
+    position: absolute;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: Helvetica;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(185deg, #707070, #707070 70%, white 70.2%, white);
+    height: 399px;
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    width: 100%;
+}
+
+header h3{
+    opacity: 1;
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin: 3.5rem 0rem 0rem 0rem;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+h5 {
+    font-weight: 100;
+}
+
+nav ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 0.5rem 0rem;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 0rem 1.2rem;
+}
+
+nav ul li a {
+    padding: 0.5rem 2.5rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #888888;
+}
+
+main {
+    float: left;
+}
