@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <title>Index</title>
+        <link rel="stylesheet" href="desktop.css">
+        <title>Desktop</title>
     </head>
     <body>
         <header>
@@ -21,8 +21,8 @@
             </nav>
         </header>
         <main>
-            <article>
-                <section>
+            <section class="informations">
+                <article class="helpAlgorithm">
                     <h2>Ajude o algorítmo a ser mais certeiro</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. 
@@ -37,48 +37,57 @@
                         Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. 
                         Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
                     </p>
-                </section>
-                <section>
+                </article>
+                <article class="emailForm">
                     <form>
-                        <label for="nomeId">Seu nome:</label>
-                            <input type="text" id="nomeId"/>
-                        <label for="emailId">E-mail:</label>
-                            <input type="email" id="emailId"/>
-                        <label for="nomeId">CPF:</label>
-                            <input type="text" id="cpfId"/>
+                        <label for="nomeId">Seu nome:</label><br/>
+                            <input class="inputText" type="text" id="nomeId"/><br/>
+                        <label for="emailId">E-mail:</label><br/>
+                            <input class="inputText" type="email" id="emailId"/><br/>
+                        <label for="cpfId">CPF:</label><br/>
+                            <input class="inputText" type="text" id="cpfId"/><br/>
 
-                        <input type="radio" name="sexo" id="masculinoId" value="Masculino"/>
-                        <label for="masculinoId">Masculino</label>
+                        <input class="radioButton" type="radio" name="sexo" id="masculinoId" value="Masculino"/>
+                        <label class="radioLabel" for="masculinoId">Masculino</label>
                                 
-                        <input type="radio" name="sexo" id="femininoId" value="Feminino"/>
-                        <label for="femininoId">Feminino</label>
-
-                        <button>Enviar</button>
+                        <input class="radioButton" type="radio" name="sexo" id="femininoId" value="Feminino"/>
+                        <label class="radioLabel" for="femininoId">Feminino</label>
+                        <br/>
+                        <button class="sendInfoBtn">Enviar</button>
                     </form>
-                </section>
-                <section>
-                    <h4>Sua relação especial</h4>
-                    <div class=""></div>
-                    <a href="#">Ainda mais produtos aqui!</a>
-                </section>
-            </article>
+                </article>
+            </section>
+            <section>
+                <div class="titleCenterPage">
+                    <hr class="firstLine"><h4>Sua seleção especial</h4><hr class="secondLine">
+                </div>
+                <article id="product">
+                </article>
+                <a class="moreProducts" href="#">Ainda mais produtos aqui!</a>
+            </section>
             <aside>
-                <h4>Compartilhe a novidade</h4>
+                <div class="titleCenterPage">
+                    <hr class="firstLine"><h4>Compartilhe a novidade</h4><hr class="secondLine">
+                </div>
                 <h5>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h5>
-                <form>
-                    <label for="nomeAmigoId">Nome do seu amigo:</label>
+                <form class="emailFormFriend">
+                    <div class="firstDivEmailFriend">
+                        <label for="nomeAmigoId">Nome do seu amigo:</label><br/>
                         <input type="text" id="nomeAmigoId"/>
-                    <label for="emailAmigoId">E-mail:</label>
+                    </div>
+                    <div class="secondDivEmailFriend">
+                        <label for="emailAmigoId">E-mail:</label><br/>
                         <input type="email" id="emailAmigoId"/>
-                    <button>Enviar agora</button>
+                    </div>
+                    <button class="sendInfoFriendBtn">Enviar agora</button>
                 </form>
             </aside>
         </main>
         <footer>
-            <h6>Testando suas habilidades em HTML, CSS e JS.</h6>
+            <h6 class="firstFooterText">Testando suas habilidades em HTML, CSS e JS.</h6>
             <h6>Linx Impulse</h6> 
             <h6>2021</h6>
         </footer>
-        <script src="index.js"></script>
+        <script src="desktop.js"></script>
     </body>
 </html>
