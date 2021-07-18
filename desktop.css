@@ -1,0 +1,286 @@
+body {
+    position: absolute;
+    margin: 0rem;
+    padding: 0rem;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+header {
+    background: linear-gradient(185deg, #707070, #707070 70%, white 70.2%, white);
+    height: 399px;
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    width: 100%;
+}
+
+header h3{
+    opacity: 1;
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin: 3.5rem 0rem 0rem 0rem;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+h5 {
+    font-weight: 100;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    width: 160px;
+    height: 40px;
+    /* padding: 0.5rem 0rem; */
+    border: 1px solid #707070;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+    margin: 0.5rem 1.2rem;
+}
+
+nav ul li a {
+    /* padding: 0.5rem 2.5rem; */
+    font-size: 14px;
+    text-decoration: none;
+    color: #888888;
+    line-height: 40px;
+}
+
+main {
+    float: left;
+    width: 100%;
+}
+
+.informations {
+    display: flex;
+    color: #888888;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #888888;
+}
+
+.helpAlgorithm {
+    width: 520px;
+    float: left;
+    /* margin: 0% 0% 0% 25%; */
+    font-size:12px;
+    line-height: 18px;
+}
+
+.helpAlgorithm > h2 {
+    margin-top: 0;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.emailForm {
+    width: 340px;
+    /* margin: 0% 10% 0% 3%; */
+    font-size: 12px;
+}
+
+.emailForm > form >  label {
+    line-height: 20px;
+}
+
+.inputText {
+    width: 100%;
+    height: 30px;
+    border: 1px solid #707070;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.radioButton {
+    vertical-align: top;
+    width: 15px;
+}
+
+.radioLabel {
+    vertical-align: sub;
+}
+
+.sendInfoBtn {
+    margin-top: 20px;
+    padding: 0.6rem;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    width: 345px;
+    color: #707070;
+}
+
+hr {
+    border: 1px solid #707070;
+    opacity: 70%
+}
+
+.titleCenterPage {
+    margin-top: 5rem;
+}
+
+.titleCenterPage h4 {
+    text-align: center;
+    color: #888888;
+    font-size: 1.15rem;
+    float: left;
+    margin: 0rem 4rem;
+}
+
+.firstLine {
+    float: left;
+    margin-left: 15%;
+    width: 20%;
+}
+
+.secondLine {
+    float: left;
+    width: 20%;
+}
+
+#product {
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    width: 1080px;
+}
+
+.productSquare img{
+    border: 1px solid #888888;
+}
+
+
+.productSquare {
+    width: 202px;
+    color: #888888; 
+    margin: 30px 30px 30px 0px;
+}
+
+.nameProd {
+    font-size: 14px;
+}
+
+.descProd {
+    font-size: 12px;
+}
+
+.oldPrice {
+    font-size: 12px;
+}
+
+.price{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.portion {
+    font-size: 12px;
+}
+
+.buttonBuy {
+    text-decoration: none;
+    border: 1px solid #707070;
+    padding: 6px 70px;
+    border-radius: 6px;
+    color: #888888;
+    margin: 0px 0px;
+}
+
+.moreProducts {
+    margin: 1% 42% 3% 42%;
+    float: left;
+    text-decoration: none;
+    color: #888888;
+    border: 1px solid #888888;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 0.6rem 3%;
+}
+
+aside {
+    float: left;
+    width: 100%;
+    /* text-align: center; */
+}
+
+aside h5 {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #888888;
+    font-size: 14px;
+}
+
+.emailFormFriend {
+    float: left;
+    width: 100%;
+}
+
+.firstDivEmailFriend {
+    width: 20%;
+    float: left;
+    margin: 0% 0% 0% 30%;
+}
+
+.secondDivEmailFriend {
+    width: 20%;
+    float: left;
+    margin: 0% 30% 0% 0%;
+}
+
+.emailFormFriend input {
+    width: 90%;
+    height: 25px;
+    border: 1px solid #707070;
+    opacity: 1;
+    margin-bottom: 20px;
+}
+
+.emailFormFriend label {
+    color: #888888;
+    font-size: 0.75rem;
+    line-height: 20px;
+}
+
+.sendInfoFriendBtn {
+    width: 260px;
+    height: 39px;
+    margin: 0% 43.2%;
+    background: #FFFFFF;
+    border: 1px solid #707070;
+    border-radius: 5px;
+    color: #888888;
+}
+
+footer {
+    background: linear-gradient(-3deg, #707070, #707070 69%, white 69.2%, white);
+    height: 293px;
+    text-align: center;
+    color: #FFFFFF;
+    float: left;
+    width: 100%;
+}
+
+footer h6 {
+    margin: 0px;
+    font-size: 12px;
+    font-weight: 100;
+    opacity: 83%;
+    line-height: 20px;
+}
+
+.firstFooterText {
+    margin-top: 10%;
+}
