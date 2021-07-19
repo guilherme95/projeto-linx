@@ -19,12 +19,14 @@ header h3{
     opacity: 1;
     font-weight: 100;
     font-size: 1.1rem;
-    margin: 3.5rem 0rem 0rem 0rem;
+    margin-top: 3.5rem;
+    margin-bottom: 0px;
 }
 
 header h1 {
     font-size: 2.3rem;
-    margin: 0rem 0rem 0rem 0rem;
+    margin-top: 0px;
+    /* margin: 0rem 0rem 0rem 0rem; */
 }
 
 h5 {
@@ -74,12 +76,13 @@ main {
     width: 520px;
     float: left;
     /* margin: 0% 0% 0% 25%; */
+    margin-right: 40px;
     font-size:12px;
     line-height: 18px;
 }
 
 .helpAlgorithm > h2 {
-    margin-top: 0;
+    /* margin-top: 0; */
     font-weight: 100;
     font-size: 20px;
 }
@@ -135,26 +138,27 @@ hr {
     color: #888888;
     font-size: 1.15rem;
     float: left;
-    margin: 0rem 4rem;
+    margin: 0% 1%;
 }
 
 .firstLine {
     float: left;
-    margin-left: 15%;
-    width: 20%;
+    margin-left: 26%;
+    width: 18%;
 }
 
 .secondLine {
     float: left;
-    width: 20%;
+    width: 18%;
 }
 
 #product {
-    float: left;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 15%;
-    width: 1080px;
+    align-items: center;
+    justify-content: center;
+    margin: 0% 21.6%;
+    width: 58%;
 }
 
 .productSquare img{
@@ -174,6 +178,7 @@ hr {
 
 .descProd {
     font-size: 12px;
+    visibility: visible;
 }
 
 .oldPrice {
@@ -199,14 +204,17 @@ hr {
 }
 
 .moreProducts {
-    margin: 1% 42% 3% 42%;
+    margin: 2% 42%;
     float: left;
     text-decoration: none;
     color: #888888;
     border: 1px solid #888888;
     border-radius: 6px;
     font-size: 16px;
-    padding: 0.6rem 3%;
+    width: 260px;
+    line-height: 39px;
+    height: 39px;
+    text-align: center;
 }
 
 aside {
@@ -216,7 +224,7 @@ aside {
 }
 
 aside h5 {
-    width: 100%;
+    width: 95%;
     float: left;
     text-align: center;
     color: #888888;
@@ -226,18 +234,22 @@ aside h5 {
 .emailFormFriend {
     float: left;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .firstDivEmailFriend {
     width: 20%;
-    float: left;
-    margin: 0% 0% 0% 30%;
+    /* float: left; */
+    /* margin: 0% 0% 0% 30%; */
 }
 
 .secondDivEmailFriend {
     width: 20%;
-    float: left;
-    margin: 0% 30% 0% 0%;
+    /* float: left; */
+    /* margin: 0% 30% 0% 0%; */
 }
 
 .emailFormFriend input {
@@ -283,4 +295,86 @@ footer h6 {
 
 .firstFooterText {
     margin-top: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    header h1, h3, h5{
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .helpAlgorithm {
+        width: 340px;
+        margin: 0;
+    }
+
+    #product {
+        width: 100%;
+        margin: 0;
+    }
+
+    #product .productSquare {
+        width: 392px;
+    }
+
+    #product div img{
+        width: 169px;
+        float: left;
+        margin-right: 10px;
+    }
+
+    #product div p{
+        float: left;
+        width: 50%;
+        margin-top: 4px;
+    }
+
+    .descProd {
+        display: none;
+    }
+
+    .firstLine {
+        width: 30%;
+        margin-left: 0;
+    }
+
+    .secondLine {
+        width: 29%;
+    }
+
+    .moreProducts {
+        margin: 5% 20%;
+    }
+
+    aside .firstLine {
+        width: 27%;
+    }
+
+    aside .secondLine {
+        width: 26%;
+    }
+
+    .emailFormFriend input {
+        width: 100%;
+    }
+
+    .firstDivEmailFriend {
+        width: 90%;
+    }
+
+    .secondDivEmailFriend {
+        width: 90%;
+    }
+
+    .sendInfoFriendBtn {
+        margin: 5% 23%;
+    }
+
+    footer {
+        height: 158px;
+    }
+
+    .firstFooterText {
+        margin-top: 15%;
+    }
 }
