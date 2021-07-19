@@ -70,7 +70,7 @@
                     <hr class="firstLine"><h4>Compartilhe a novidade</h4><hr class="secondLine">
                 </div>
                 <h5>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h5>
-                <form class="emailFormFriend" method="POST" onsubmit="sendEmail()" >
+                <form class="emailFormFriend" method="dialog">
                     <div class="firstDivEmailFriend">
                         <label for="friendNameId">Nome do seu amigo:</label><br/>
                         <input type="text" id="friendNameId" name="friendName"/>
@@ -79,7 +79,7 @@
                         <label for="friendEmailId">E-mail:</label><br/>
                         <input type="email" id="friendEmailId" name="emailFriend"/>
                     </div>
-                    <button class="sendInfoFriendBtn" type="submit" onclick="window.location.href = 'email.html';">Enviar agora</button>
+                    <button class="sendInfoFriendBtn" onclick="sendEmail()">Enviar agora</button>
                 </form>
             </aside>
         </main>
