@@ -26,7 +26,6 @@ header h3{
 header h1 {
     font-size: 2.3rem;
     margin-top: 0px;
-    /* margin: 0rem 0rem 0rem 0rem; */
 }
 
 h5 {
@@ -44,7 +43,6 @@ nav ul {
 nav ul li {
     width: 160px;
     height: 40px;
-    /* padding: 0.5rem 0rem; */
     border: 1px solid #707070;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -52,7 +50,6 @@ nav ul li {
 }
 
 nav ul li a {
-    /* padding: 0.5rem 2.5rem; */
     font-size: 14px;
     text-decoration: none;
     color: #888888;
@@ -75,21 +72,18 @@ main {
 .helpAlgorithm {
     width: 520px;
     float: left;
-    /* margin: 0% 0% 0% 25%; */
     margin-right: 40px;
     font-size:12px;
     line-height: 18px;
 }
 
 .helpAlgorithm > h2 {
-    /* margin-top: 0; */
     font-weight: 100;
     font-size: 20px;
 }
 
 .emailForm {
     width: 340px;
-    /* margin: 0% 10% 0% 3%; */
     font-size: 12px;
 }
 
@@ -207,14 +201,12 @@ hr {
 .moreProducts {
     margin: 2% 42%;
     float: left;
-    /* text-decoration: none; */
     color: #888888;
     border: 1px solid #888888;
     background: #FFFFFF;
     border-radius: 6px;
     font-size: 16px;
     width: 260px;
-    /* line-height: 39px; */
     cursor: pointer;
     height: 39px;
     text-align: center;
@@ -223,7 +215,6 @@ hr {
 aside {
     float: left;
     width: 100%;
-    /* text-align: center; */
 }
 
 aside h5 {
@@ -245,14 +236,10 @@ aside h5 {
 
 .firstDivEmailFriend {
     width: 20%;
-    /* float: left; */
-    /* margin: 0% 0% 0% 30%; */
 }
 
 .secondDivEmailFriend {
     width: 20%;
-    /* float: left; */
-    /* margin: 0% 30% 0% 0%; */
 }
 
 .emailFormFriend input {
