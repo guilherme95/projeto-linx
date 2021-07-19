@@ -53,7 +53,7 @@
                         <input class="radioButton" type="radio" name="sexo" id="femininoId" value="Feminino"/>
                         <label class="radioLabel" for="femininoId">Feminino</label>
                         <br/>
-                        <button class="sendInfoBtn">Enviar</button>
+                        <button>Enviar</button>
                     </form>
                 </article>
             </section>
@@ -63,23 +63,23 @@
                 </div>
                 <article id="product">
                 </article>
-                <a class="moreProducts" href="#">Ainda mais produtos aqui!</a>
+                <button class="moreProducts" onclick="loadMoreProducts()">Ainda mais produtos aqui!</button>
             </section>
             <aside>
                 <div class="titleCenterPage">
                     <hr class="firstLine"><h4>Compartilhe a novidade</h4><hr class="secondLine">
                 </div>
                 <h5>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</h5>
-                <form class="emailFormFriend">
+                <form class="emailFormFriend" method="POST" onsubmit="sendEmail()" >
                     <div class="firstDivEmailFriend">
-                        <label for="nomeAmigoId">Nome do seu amigo:</label><br/>
-                        <input type="text" id="nomeAmigoId"/>
+                        <label for="friendNameId">Nome do seu amigo:</label><br/>
+                        <input type="text" id="friendNameId" name="friendName"/>
                     </div>
                     <div class="secondDivEmailFriend">
-                        <label for="emailAmigoId">E-mail:</label><br/>
-                        <input type="email" id="emailAmigoId"/>
+                        <label for="friendEmailId">E-mail:</label><br/>
+                        <input type="email" id="friendEmailId" name="emailFriend"/>
                     </div>
-                    <button class="sendInfoFriendBtn">Enviar agora</button>
+                    <button class="sendInfoFriendBtn" type="submit" onclick="window.location.href = 'email.html';">Enviar agora</button>
                 </form>
             </aside>
         </main>
