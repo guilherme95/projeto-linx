@@ -1,26 +1,6 @@
-var globalUrl;
-
-function sendEmail(){
-    const friendName = document.getElementById("friendNameId").value;
-    const friendEmail = document.getElementById("friendEmailId").value;
-
-    var response = validateEmail(friendEmail);
-
-    if(response && friendName!=""){
-        window.location.href = "../pages/email.html";
-    }else{
-        window.alert("Email ou usuário inválido!");
-    }
-}
-
 function validateEmail(email) {
     const re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
-  }
-  
-
-function loadMoreProducts(){
-    getProducts(globalUrl);
 }
 
 function makeProducts(product){
@@ -79,9 +59,15 @@ function makeProducts(product){
 function getProducts(url){
     fetch(url).then(res => res.json()).then((out)=>{
         var productSquare = document.getElementById("product");
-
-        globalUrl = "https://"+out.nextPage;
-
+        for(const [i, element] of out.products.entries()){ 
+            if(i>1){
+                console.log("dfsdfsd");
+                return 0;
+            }else{
+                var prod = makeProducts(element);
+                productSquare.appendChild(prod);
+            }
+        }
         out.products.forEach(element => {
             var prod = makeProducts(element);
             productSquare.appendChild(prod);
