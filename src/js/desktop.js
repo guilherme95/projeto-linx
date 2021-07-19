@@ -7,6 +7,7 @@ function sendEmail(){
     var response = validateEmail(friendEmail);
 
     if(response && friendName!=""){
+        window.alert("Usuário validado!");
         window.location.href = "../pages/email.html";
     }else{
         window.alert("Email ou usuário inválido!");
